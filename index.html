@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+    <title>My books list</title>
+    <style>
+        .sort {
+            cursor: pointer;
+        }
+        .sort:hover {
+            color: red;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Books list</h1>
+<div>
+    <label for="show-unread">Show unread only?</label>
+    <input type="checkbox" id="show-unread" name="show-unread">
+</div>
+<div>
+    <label for="search">Search:</label>
+    <input type="text" name="search" id="search">
+    <button type="button" id="search-button">Search</button>
+</div>
+
+    <table>
+        <thead>
+        <tr>
+            <th id="sort-title" class="sort">Title</th>
+            <th id="sort-author" class="sort">author</th>
+            <th id="sort-year" class="sort">year</th>
+            <th>completed?</th>
+        </tr>
+    </thead>
+    <tbody></tbody>
+    </table>
+
+   
+
+    <script src="index.js"></script>
+
+</body>
+</html>
